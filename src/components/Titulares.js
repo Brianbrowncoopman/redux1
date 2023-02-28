@@ -1,5 +1,6 @@
 import React from "react";
 import { connect } from "react-redux";
+import cancha from "../img/cancha.svg";
 
 const Titulares = ({ titulares, quitarTitular }) => (
   <section>
@@ -14,6 +15,7 @@ const Titulares = ({ titulares, quitarTitular }) => (
           <p>{j.nombre}</p>
         </article>
       ))}
+      <img src={cancha} alt="Cancha de futbol" />
     </div>
   </section>
 );
